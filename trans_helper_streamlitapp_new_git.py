@@ -104,6 +104,7 @@ of the text that is delimited by triple backticks. Follow these rules:\n {rules}
 \ntext: \n```
 {text}
 ```
+The translation should be based on a more colloquial vocabulary.
 """
 
 prompt_template = ChatPromptTemplate.from_template(template_string)
@@ -126,7 +127,7 @@ def main():
     ** Output text:** `view.elements.footer.note.11=(it) <sup>**</sup> Questo parere proviene dal nostro sondaggio clienti, che conduciamo continuamente dal 2010 come strumento per la gestione della qualità e il miglioramento dei prodotti. Intervistiamo tutti i clienti diretti 21 giorni dopo l'acquisto via e-mail sulla loro soddisfazione, esperienze e suggerimenti di miglioramento relativi alla consegna e ai prodotti ordinati.`
     
     **Expecting:**
-    * Accurate official translation according to the context.
+    * The translation should be based on a more colloquial vocabulary.
     * Preserving formatting and special characters.
     * Answer in the form of a processed text fragment without adding any comments of your own.
     **Now give me the processed text using the input snippet I'll give you.**"""
